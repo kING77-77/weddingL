@@ -52,6 +52,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   max-width: 900px;
 }
+@media (max-width: 480px) {
+  .glass-panel {
+    padding: 1rem;
+    border-radius: 15px;
+  }
+}
 
 /* Typography Utilities */
 .text-gold { color: var(--color-gold); }

@@ -207,6 +207,31 @@ import { CommonModule } from '@angular/common';
       }
     }
     
+    @media (max-width: 480px) {
+      .calendar-wrapper {
+        padding: 1rem 0.75rem;
+      }
+      .calendar-grid {
+        gap: 4px;
+        font-size: 0.8rem;
+      }
+      .day-name {
+        font-size: 0.65rem;
+        margin-bottom: 5px;
+      }
+      .day {
+        padding: 2px;
+      }
+      .wedding-day {
+        transform: scale(1.05);
+      }
+      .heart-mark {
+        font-size: 0.65rem;
+        top: -6px;
+        right: -6px;
+      }
+    }
+    
     /* Scroll Reveal */
     .scroll-reveal {
       opacity: 0;
