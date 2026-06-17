@@ -180,7 +180,7 @@ export class Rsvp implements OnInit {
   // ==========================================
   // Փոխարինեք այս արժեքները ձեր տվյալներով:
   TELEGRAM_BOT_TOKEN = '8606764083:AAGzKLI501D6qyxbZ2uz0oeCtUKfo5oVpU4';
-  TELEGRAM_CHAT_ID = 1275696696;
+  TELEGRAM_CHAT_ID = '1887985880';
   come: string = 'yes';
   name: string = '';
   surname: string = '';
@@ -226,7 +226,7 @@ export class Rsvp implements OnInit {
                     ` <b>Հյուրեր </b> ${guestsCount}`;
 
     // Send HTTP POST to Telegram Bot API
-    fetch(`https://api.telegram.org/bot${this.TELEGRAM_CHAT_ID}/sendMessage`, {
+    fetch(`https://api.telegram.org/bot${this.TELEGRAM_BOT_TOKEN}/sendMessage`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
