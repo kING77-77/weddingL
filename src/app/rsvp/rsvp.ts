@@ -180,8 +180,7 @@ export class Rsvp implements OnInit {
   // ==========================================
   // Փոխարինեք այս արժեքները ձեր տվյալներով:
   TELEGRAM_BOT_TOKEN = '8606764083:AAGzKLI501D6qyxbZ2uz0oeCtUKfo5oVpU4';
-  TELEGRAM_CHAT_ID = '1887985880';
-  FRIEND_CHAT_ID = '1275696696';
+  TELEGRAM_CHAT_ID = '1275696696';
   come: string = 'yes';
   name: string = '';
   surname: string = '';
@@ -234,7 +233,6 @@ export class Rsvp implements OnInit {
       },
       body: JSON.stringify({
         chat_id: this.TELEGRAM_CHAT_ID,
-        friend_chat_id: this.FRIEND_CHAT_ID,
         text: message,
         parse_mode: 'HTML'
       })
