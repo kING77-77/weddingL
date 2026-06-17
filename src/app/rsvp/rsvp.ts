@@ -226,7 +226,7 @@ export class Rsvp implements OnInit {
                     ` <b>Հյուրեր </b> ${guestsCount}`;
 
     // Send HTTP POST to Telegram Bot API
-    fetch(`https://api.telegram.org/bot${this.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+    fetch(`https://api.telegram.org/bot${this.TELEGRAM_CHAT_ID}/sendMessage`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
