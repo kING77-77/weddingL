@@ -179,8 +179,8 @@ export class Rsvp implements OnInit {
   // TELEGRAM BOT CONFIGURATION
   // ==========================================
   // Փոխարինեք այս արժեքները ձեր տվյալներով:
-  TELEGRAM_BOT_TOKEN = '8606764083:AAGzKLI501D6qyxbZ2uz0oeCtUKfo5oVpU4';
-  TELEGRAM_CHAT_ID = '1887985880';
+  TOKEN = '8606764083:AAGzKLI501D6qyxbZ2uz0oeCtUKfo5oVpU4';
+  ID = '1887985880';
   come: string = 'yes';
   name: string = '';
   surname: string = '';
@@ -211,6 +211,11 @@ export class Rsvp implements OnInit {
   }
 
   send(event: Event) {
+    console.log({
+  chatId: this.ID,
+  name: this.name,
+  surname: this.surname
+});
     event.preventDefault();
     if (!this.name || !this.surname) return;
     
@@ -226,13 +231,13 @@ export class Rsvp implements OnInit {
                     ` <b>Հյուրեր </b> ${guestsCount}`;
 
     // Send HTTP POST to Telegram Bot API
-    fetch(`https://api.telegram.org/bot${this.TELEGRAM_BOT_TOKEN}/sendMessage`, {
+    fetch(`https://api.telegram.org/bot${this.TOKEN}/sendMessage`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        chat_id: this.TELEGRAM_CHAT_ID,
+        chat_id: this.ID,
         text: message,
         parse_mode: 'HTML'
       })
@@ -251,6 +256,12 @@ export class Rsvp implements OnInit {
       this.name = '';
       this.surname = '';
       this.guests = 1;
+    })
+    .then(()=>{
+
+            this.isSending = false;
+      this.successMessage = true;
+alert("Շնորհակալություն")
     })
     .catch(err => {
       console.error('Error sending RSVP via Telegram:', err);

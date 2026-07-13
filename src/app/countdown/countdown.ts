@@ -154,7 +154,7 @@ import { Component, ElementRef, OnInit, OnDestroy } from '@angular/core';
   `]
 })
 export class Countdown implements OnInit, OnDestroy {
-  targetDate = new Date('2026-06-27T13:00:00').getTime();
+  targetDate = new Date('2026-08-21T13:00:00').getTime();
   days = 0; hours = 0; minutes = 0; seconds = 0;
   private timerId: any;
   

@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
       <div class="hero-overlay"></div>
       <div class="hero-content fade-in text-center">
         <h3 class="subtitle-elegant reveal">Հրավիրում ենք բոլորիդ մեր հարսանյաց արարողությանը</h3>
-        <h1 class="title-elegant text-gold mt-4 reveal delay-1">Իշխան և Լիլիա</h1>
+        <h1 class="title-elegant text-gold mt-4 reveal delay-1">Արամ և Էլեն</h1>
 
         
         <button class="play-btn reveal delay-3 mt-4" (click)="scrollDown()">

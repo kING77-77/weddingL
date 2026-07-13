@@ -13,8 +13,8 @@ import { Component } from '@angular/core';
         
         <div class="divider"></div>
         
-        <p class="couple-names">Իշխան և Լիլիա</p>
-        <p class="wedding-date">27 . 06. 2026</p>
+        <p class="couple-names">Արամ և Էլեն</p>
+        <p class="wedding-date">21 . 08. 2026</p>
       </div>
     </footer>
   `,
